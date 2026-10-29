@@ -28,14 +28,34 @@ Our mission is to help organisations build robust, secure, and maintainable syst
 
 ## What You’ll Find Here
 
-✅ Infrastructure automation modules  
-✅ CI/CD frameworks  
-✅ Cloud-native reference architectures  
-✅ AI and ML engineering patterns  
-✅ DevSecOps practices and templates  
-✅ Internal open-source and community contributions  
+This organisation is the **public source for Microcelium SAMPs** —
+Substrate Ansible Mitigation Packs, the CVE mitigation packs that
+[Micro-Substrate](https://www.micro-substrate.com) imports, verifies
+against signed release tags, and runs on the machines it manages, after
+a person approves them.
 
-These projects are the behind-the-scenes, foundational parts of our platform — practical building blocks that keep systems secure, reliable, and scalable.
+Each pack is a standalone Ansible role that detects, backs up and
+mitigates one vulnerability, reporting a machine-readable result and an
+exit code a substrate reads. They work on their own with
+`ansible-playbook`; inside a substrate they are imported from this
+organisation by declared repository, and only at signed `samp/vX.Y.Z`
+release tags.
+
+---
+
+## Microcelium
+
+The SAMPs here are one published piece of a larger platform.
+
+**[Microcelium](https://www.microcelium.com)** — *Built for Agentic
+Engineering.* The platform layer beneath a company’s product: auth,
+messaging, observability, integrations and compliance, with agents
+running much of it.
+
+**[Micro-Substrate](https://www.micro-substrate.com)** — *The substrate
+you own.* The foundation layer: bare metal, hypervisors, networks,
+firewalls and container stacks, declared in Git and driven by people or
+agents through one audited core. SAMPs are how it does CVE remediation.
 
 ---
 
